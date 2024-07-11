@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     heart.addEventListener("click",() =>{
       mimicServerCall()
       .then(() => {
-        if (heart.classList.contains("FULL_HEART")){
-          heart.classList.remove("FULL_HEART");
+        if (heart.classList.contains("activated-heart")){
+          heart.classList.remove("Factivated-heart");
           heart.innerText = '♡';
         }else {
-          heart.classList.add("FULL_HEART");
+          heart.classList.add("activated-heart");
           heart.innerText = '♥';
         }
       })
